@@ -74,8 +74,8 @@ export async function POST(req: NextRequest) {
         let parsedFeedback;
         try {
             parsedFeedback = JSON.parse(feedback);
-        } catch (jsonError) {
-            console.error("JSON Parse Error:", jsonError);
+        } catch (_error: unknown) {
+            console.error("JSON Parse Error:", _error);
             throw new Error("GPTのレスポンスがJSONとして解析できませんでした。");
         }
 
@@ -91,8 +91,8 @@ export async function POST(req: NextRequest) {
             feedback: parsedFeedback
         });
 
-    } catch (error: any) {
-        console.error("校正エラー:", error);
-        return NextResponse.json({ error: error.message || "添削エラー" }, { status: 500 });
+    } catch (_error: unknown) {
+        console.error("校正エラー:", _error);
+        return NextResponse.json({ error: (_error as Error).message || "添削エラー" }, { status: 500 });
     }
 }

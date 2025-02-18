@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-let recentPrompts: string[] = []; // 過去のお題を保存
+const recentPrompts: string[] = []; // 過去のお題を保存
 const MAX_HISTORY = 10; // 保存する履歴の最大数
 
 export async function POST(req: NextRequest) {
