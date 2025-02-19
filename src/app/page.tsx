@@ -14,7 +14,6 @@ export default function Home() {
     const [text, setText] = useState("");
     const [corrections, setCorrections] = useState<Correction[]>([]);
     const [correctedText, setCorrectedText] = useState("");
-    const [isRelevant, setIsRelevant] = useState<boolean | null>(null);
     const [isGenerating, setIsGenerating] = useState(false);
     const [isCorrecting, setIsCorrecting] = useState(false);
     const [freeMode, setFreeMode] = useState(false);
@@ -69,7 +68,6 @@ export default function Home() {
             });
             if (!response.ok) throw new Error("Correction failed");
             const data = await response.json();
-            setIsRelevant(data.corrections.length > 0 ? data.isRelevant : true);
             setCorrectedText(data.correctedText);
             setCorrections(data.corrections);
         } catch (error) {
