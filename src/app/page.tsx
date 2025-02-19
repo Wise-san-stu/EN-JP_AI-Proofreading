@@ -19,7 +19,7 @@ export default function Home() {
     const [freeMode, setFreeMode] = useState(false);
 
     const labels = mode === "english" ? {
-        language: "言語選択",
+        language: "言語選択/Language",
         level: "レベルを選択",
         levels: { beginner: "初級", intermediate: "中級", advanced: "上級" },
         topic: "お題",
