@@ -124,9 +124,9 @@ export default function Home() {
 
             {correctedText && (
                 <div className="mt-6 p-4 bg-white border rounded-lg shadow-sm">
-                    <h2 className="text-lg font-bold">校正結果:</h2>
-                    <p><strong>修正後:</strong> {correctedText}</p>
-                    <h3 className="mt-4 font-semibold">修正点:</h3>
+                    <h2 className="text-lg font-bold">校正結果/Proofreading Results:</h2>
+                    <p><strong>修正後/Corrected Text:</strong> {correctedText}</p>
+                    <h3 className="mt-4 font-semibold">修正点/Correction Points:</h3>
                     <ul className="list-disc pl-5">
                         {corrections.map((correction, index) => (
                             <li key={index}><strong>{correction.original}</strong> → <strong>{correction.corrected}</strong><br /><span>{correction.reason}</span></li>
