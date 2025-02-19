@@ -28,7 +28,7 @@ export default function Home() {
         proofread: "校正する",
         freeMode: "自由添削モード",
     } : {
-        language: "Language",
+        language: "言語選択/Language",
         level: "Select a level",
         levels: { beginner: "Beginner", intermediate: "Intermediate", advanced: "Advanced" },
         topic: "Topic",
