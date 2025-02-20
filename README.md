@@ -6,7 +6,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 - Supports both English and Japanese proofreading. Users can select the language in the `Language` tab.
 - Two modes available:
-  - **Guided Mode:** Users write a sentence based on an AI-generated prompt and receive corrections.
+  - **Topic Mode:** Users write a sentence based on an AI-generated prompt and receive corrections.
   - **Free Mode:** Users input any text and receive AI-powered proofreading.
 - AI-generated prompts available by clicking the "Generate Prompt" button.
 - Users can submit text for proofreading by clicking the "Proofread" button.
