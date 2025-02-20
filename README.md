@@ -1,4 +1,17 @@
+# Next.js AI Proofreading App
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Features
+
+- Supports both English and Japanese proofreading. Users can select the language in the `Language` tab.
+- Two modes available:
+  - **Guided Mode:** Users write a sentence based on an AI-generated prompt and receive corrections.
+  - **Free Mode:** Users input any text and receive AI-powered proofreading.
+- AI-generated prompts available by clicking the "Generate Prompt" button.
+- Users can submit text for proofreading by clicking the "Proofread" button.
+- Enabling "Free Mode" removes the prompt, allowing free-text proofreading.
+- AI-powered proofreading is not 100% accurate.
 
 ## Getting Started
 
@@ -34,3 +47,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
