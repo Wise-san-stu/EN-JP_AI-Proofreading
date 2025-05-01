@@ -81,7 +81,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto p-6 bg-gray-100 dark:bg-gray-900 min-h-screen rounded-xl shadow-lg">
             <div className="header">
                 <h1>AI Proofreading ✍️</h1>
-                <span className="author">created by Wise.</span>
+                <span className="author">created by Ryoga Tano.</span>
             </div>
 
             <div className="mb-4">
